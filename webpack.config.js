@@ -18,10 +18,9 @@ module.exports = {
       directory: path.resolve(__dirname, 'dist'),
     },
     compress: true,
-    port: 3001,
+    port: 4002,
     open: true,
     hot: true,
-    historyApiFallback: true,
   },
   module: {
     rules: [
