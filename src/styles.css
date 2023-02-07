@@ -1,166 +1,166 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    background-image: url(./Assets/background\ image.jpg);
-    margin: 100px;
+  background-image: url(./Assets/background\ image.jpg);
+  margin: 100px;
 }
 
 .nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0.5rem 5rem;
-    background-color: black;
-    position: fixed;
-    z-index: 10;
-    right: 0;
-    left: 0;
-    top: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 5rem;
+  background-color: black;
+  position: fixed;
+  z-index: 10;
+  right: 0;
+  left: 0;
+  top: 0;
 }
 
 h2 {
-    color: white;
-    font-size: 3.5rem;
+  color: white;
+  font-size: 3.5rem;
 }
 
 ul {
-    display: flex;
-    list-style: none;
+  display: flex;
+  list-style: none;
 }
 
 ul li {
-    margin: 0 20px;
+  margin: 0 20px;
 }
 
 ul li a {
-    text-decoration: none;
-    color: red;
-    font-size: 1.5rem;
+  text-decoration: none;
+  color: red;
+  font-size: 1.5rem;
 }
 
 .animes h3 {
-    margin: 20px;
-    font-size: 3rem;
-    color:white;
-    text-align: center;
+  margin: 20px;
+  font-size: 3rem;
+  color: white;
+  text-align: center;
 }
 
 .show {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
 }
 
 .likes-btn {
-    display: inline-block;
-    border: none;
-    background-color: transparent;
-    cursor: pointer;
+  display: inline-block;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
 }
 
 .likes-btn svg {
-    width: 2.5em;
-    height: 2.5em;
-    fill: #ccc
+  width: 2.5em;
+  height: 2.5em;
+  fill: #ccc;
 }
 
 .likes-btn.liked svg {
-    fill: #f00;
+  fill: #f00;
 }
 
 .likes-count {
-    color: white;
-    padding-bottom: 12px;
+  color: white;
+  padding-bottom: 12px;
 }
 
-.comments{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin: 20px;
+.comments {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
 }
 
 .main-anime-container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 20px;
-    align-items: center;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+  align-items: center;
 }
 
 .display {
-    display: flex;
-    flex-direction: column;
-    margin: 30px;
-    padding: 20px;
-    background-color: maroon;
-    border-radius: 10px;
-    box-shadow: 0 0 10px white;
+  display: flex;
+  flex-direction: column;
+  margin: 30px;
+  padding: 20px;
+  background-color: maroon;
+  border-radius: 10px;
+  box-shadow: 0 0 10px white;
 }
 
 .display .image-display {
-    border-radius: 10px;
-    width: 100%;
-    height: 250px;
+  border-radius: 10px;
+  width: 100%;
+  height: 250px;
 }
 
 .description {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
 }
 
 .display .description {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    margin: 20px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 20px;
 }
 
 .description .title-display {
-    font-size: 3.5rem;
-    color: green;
-    margin-bottom: 20px;
+  font-size: 3.5rem;
+  color: green;
+  margin-bottom: 20px;
 }
 
 .display .description .title-display {
-    font-size: 2rem;
-    color: whitesmoke;
+  font-size: 2rem;
+  color: whitesmoke;
 }
 
 .comment-btn {
-    display: flex;
-    border: none;
-    background-color: whitesmoke;
-    cursor: pointer;
-    padding: 10px 20px;
-    border-radius: 10px;
-    justify-content: center;
-    align-items: center;
-    margin: auto;
-    color: red;
-    font-size: 1.2rem;
-    font-weight: 500;
-    box-shadow: 0 0 10px white;
+  display: flex;
+  border: none;
+  background-color: whitesmoke;
+  cursor: pointer;
+  padding: 10px 20px;
+  border-radius: 10px;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  color: red;
+  font-size: 1.2rem;
+  font-weight: 500;
+  box-shadow: 0 0 10px white;
 }
 
 .footer {
-    position: fixed;
-    z-index: 10;
-    right: 0;
-    left: 0;
-    bottom: 0;
-    text-align: center;
-    background-color: black;
-    color: whitesmoke;
-    padding: 20px;
-    font-size: 1.2rem;
+  position: fixed;
+  z-index: 10;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  text-align: center;
+  background-color: black;
+  color: whitesmoke;
+  padding: 20px;
+  font-size: 1.2rem;
 }
