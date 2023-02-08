@@ -28,6 +28,8 @@ const likeAction = async (idArrs) => {
           liked: true,
         });
         localStorage.setItem('actions', JSON.stringify(actions));
+        const likeCount = like.nextElementSibling;
+        likeCount.innerText = parseInt(likeCount.innerText, 10) + 1;
       }
     });
   });
