@@ -1,12 +1,19 @@
+@import url("https://fonts.googleapis.com/css2?family=Itim&display=swap");
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Itim", cursive;
 }
 
 body {
-  background-image: url(./Assets/background\ image.jpg);
-  margin: 100px;
+  background-image: url(./assets/bgImage.jpg);
+}
+
+body.modal-active {
+  height: 100vh;
+  overflow: hidden;
 }
 
 .nav {
@@ -16,7 +23,7 @@ body {
   padding: 0.5rem 5rem;
   background-color: black;
   position: fixed;
-  z-index: 10;
+  z-index: 2;
   right: 0;
   left: 0;
   top: 0;
@@ -40,6 +47,10 @@ ul li a {
   text-decoration: none;
   color: red;
   font-size: 1.5rem;
+}
+
+.animes {
+  padding: 100px;
 }
 
 .animes h3 {
@@ -154,7 +165,7 @@ ul li a {
 
 .footer {
   position: fixed;
-  z-index: 10;
+  z-index: 3;
   right: 0;
   left: 0;
   bottom: 0;
@@ -163,4 +174,100 @@ ul li a {
   color: whitesmoke;
   padding: 20px;
   font-size: 1.2rem;
+}
+
+/* modal start */
+.modal {
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 5%;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 20px;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 5;
+  overflow-y: scroll;
+  display: none;
+}
+
+.close-btn {
+  background-color: transparent;
+  font-size: 2em;
+  border: none;
+  position: absolute;
+  right: 5%;
+  top: 3%;
+  cursor: pointer;
+}
+
+.close-btn:hover {
+  color: maroon;
+}
+
+.img-container {
+  width: 30%;
+  height: 40vh;
+}
+
+.popup-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.info-container {
+  width: 100%;
+  text-align: center;
+}
+
+table,
+tbody {
+  width: 100%;
+  display: inline-block;
+  text-align: left;
+}
+
+tr {
+  width: 100%;
+  display: inline-block;
+  display: grid;
+  grid-template-columns: 10% 85%;
+  column-gap: 10px;
+  margin: 10px 0;
+}
+
+tr td:first-child {
+  grid-column: 1 / span 1;
+  display: flex;
+  justify-content: space-between;
+}
+
+.cmt-container,
+.cmt-form {
+  width: 100%;
+  text-align: left;
+}
+
+.cmt-container h2,
+.cmt-form h2 {
+  color: #000;
+  font-size: 1.5em;
+  text-align: center;
+}
+
+.form-control {
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid #000;
+  margin: 10px 0;
+}
+
+.cmt-btn {
+  background-color: transparent;
+  padding: 3px;
+  cursor: pointer;
 }
