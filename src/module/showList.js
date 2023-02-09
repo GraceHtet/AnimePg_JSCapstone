@@ -2,6 +2,7 @@ import { aniApi, popup } from './popup.js';
 import { likeAction, showLikes } from './like.js';
 import list from './dynamicList.js';
 
+const counter = document.querySelector('.shows-tracker');
 const anidata = [];
 
 const apiFun = async () => {
@@ -17,6 +18,7 @@ const apiFun = async () => {
   });
 
   list(anidata);
+  counter.innerHTML = `(${anidata.length})`;
   popup(anidata);
   likeAction(anidata);
   showLikes(anidata);

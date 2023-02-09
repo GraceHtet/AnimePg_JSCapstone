@@ -286,6 +286,7 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
 
 
 
+var counter = document.querySelector('.shows-tracker');
 var anidata = [];
 var apiFun = /*#__PURE__*/function () {
   var _ref = _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee() {
@@ -307,10 +308,11 @@ var apiFun = /*#__PURE__*/function () {
             }
           });
           (0,_dynamicList_js__WEBPACK_IMPORTED_MODULE_2__["default"])(anidata);
+          counter.innerHTML = "(".concat(anidata.length, ")");
           (0,_popup_js__WEBPACK_IMPORTED_MODULE_0__.popup)(anidata);
           (0,_like_js__WEBPACK_IMPORTED_MODULE_1__.likeAction)(anidata);
           (0,_like_js__WEBPACK_IMPORTED_MODULE_1__.showLikes)(anidata);
-        case 8:
+        case 9:
         case "end":
           return _context.stop();
       }
