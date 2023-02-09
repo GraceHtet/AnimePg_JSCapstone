@@ -1,8 +1,9 @@
+/* eslint-disable import/no-cycle */
 import { aniApi, popup } from './popup.js';
 import { likeAction, showLikes } from './like.js';
 import list from './dynamicList.js';
+import itemCounter from './itemcounter';
 
-const counter = document.querySelector('.shows-tracker');
 const anidata = [];
 
 const apiFun = async () => {
@@ -18,7 +19,7 @@ const apiFun = async () => {
   });
 
   list(anidata);
-  counter.innerHTML = `(${anidata.length})`;
+  itemCounter();
   popup(anidata);
   likeAction(anidata);
   showLikes(anidata);
