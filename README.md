@@ -147,9 +147,9 @@ Good luck!
 - GitHub: [Grace Htet](https://github.com/GraceHtet)
 - LinkedIn: [Thiri Htet](https://www.linkedin.com/in/thiri-htet-418047204/)
 
-👤 **Joshua**
+👤 **Joshua Daryll Lyngdoh**
 
-- GitHub: [Grace Htet](https://github.com/joshualyngdoh)
+- GitHub: [Joshua Daryll Lyngdoh](https://github.com/joshualyngdoh)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
