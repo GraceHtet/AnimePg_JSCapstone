@@ -2,7 +2,7 @@
 import { aniApi, popup } from './popup.js';
 import { likeAction, showLikes } from './like.js';
 import list from './dynamicList.js';
-import itemCounter from './itemcounter';
+import itemCounter from './itemcounter.js';
 
 const anidata = [];
 
