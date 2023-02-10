@@ -1,4 +1,7 @@
 import './styles.css';
-import { apiFun } from './module/showList.js';
+import { anidata, apiFun } from './module/showList.js';
+import itemCounter from './module/itemcounter';
 
 apiFun();
+itemCounter();
+anidata();
