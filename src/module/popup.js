@@ -1,4 +1,5 @@
 import onepiece from '../assets/onepiece.jpg';
+import { commentAction, showComments } from './comment.js';
 
 const baseUrl = 'https://api.jikan.moe/v4/';
 
@@ -38,6 +39,9 @@ const popup = async (idArrs) => {
           rating.innerHTML = each.score;
         }
       });
+
+      showComments(idArrs[i]);
+      commentAction(idArrs[i]);
     };
   }
 

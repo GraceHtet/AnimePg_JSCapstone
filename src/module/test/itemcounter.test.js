@@ -1,5 +1,5 @@
-import itemCounter from '../itemcounter';
-import * as ApiData from '../showList';
+import itemCounter from '../itemcounter.js';
+import * as ApiData from '../showList.js';
 
 jest.mock('../showList');
 
@@ -31,7 +31,9 @@ describe('itemCounter', () => {
     counter.setAttribute('class', 'anime-title');
     jest.spyOn(document, 'querySelector').mockReturnValueOnce(counter);
     itemCounter();
-    expect(counter.innerHTML).toBe('Anime TV shows <span class="shows-tracker">(3)</span>');
+    expect(counter.innerHTML).toBe(
+      'Anime TV shows <span class="shows-tracker">(3)</span>',
+    );
   });
 
   it('should show "No shows added" if the length of anidata is 0', () => {

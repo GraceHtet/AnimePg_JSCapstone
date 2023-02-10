@@ -303,6 +303,20 @@ td span {
   color: red;
 }
 
+.comment-list {
+  height: 200px;
+  text-align: left;
+  color: #fff;
+  flex-direction: column;
+  row-gap: 5px;
+  margin: 20px 0;
+  overflow-y: scroll;
+}
+
+.comment-list span:nth-of-type(2) {
+  margin: 0 5px 0 20px;
+}
+
 .form-control {
   background: white;
   border: none;

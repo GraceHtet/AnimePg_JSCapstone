@@ -1,5 +1,5 @@
 /* eslint-disable import/no-cycle */
-import { anidata } from './showList';
+import { anidata } from './showList.js';
 
 const itemCounter = () => {
   const counter = document.querySelector('.anime-title');

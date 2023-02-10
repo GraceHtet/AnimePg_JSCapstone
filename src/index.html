@@ -14,7 +14,7 @@
     <header>
       <div class="nav">
         <div class="nav_logo">
-          <h2>Anime shows</h2>
+          <img src="./assets/showLogo.png" width="100px" />
         </div>
         <div class="nav_links">
           <ul>
@@ -32,59 +32,60 @@
       </h3>
       <div class="main-anime-container"></div>
     </div>
-     <section class="modal">
+    <section class="modal">
       <div class="pop_up_blur_effect"></div>
       <div class="popup-wrapper">
         <button type="button" class="close-btn">X</button>
-      <div class="img-container">
-      <img src="./assets/onepiece.jpg" class="popup-img" alt="onepiece" />
-      </div>
-      <div class="info-container">
-        <h1 class="popup-title"></h1>
-        <table>
-          <tbody>
-            <tr>
-              <td><span>Short Story</span><span>:</span></td>
-              <td class="info"></td>
-            </tr>
-            <tr>
-              <td><span>Broadcast</span><span>:</span></td>
-              <td class="broadcast"></td>
-            </tr>
-            <tr>
-              <td><span>Rating</span><span>:</span></td>
-              <td class="rating"></td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-      <div class="cmt-container">
-        <h2 class="sub-title">Comments - <span class="cmtCount"></span></h2>
-        <ul class="comment-list"></ul>
-      </div>
-      <div class="cmt-form">
-        <h2 class="sub-title">Add a Comment</h2>
-        <form action="" method="">
-          <div class="input-container">
-            <input
-              type="text"
-              name="name"
-              id="name"
-              class="form-control"
-              placeholder="Your Name"
-            />
-          </div>
-          <div class="input-container">
-            <textarea
-              class="form-control"
-              placeholder="Your insights"
-            ></textarea>
-          </div>
-          <div class="btn-container">
-            <button type="submit" class="cmt-btn">Comment</button>
-          </div>
-        </form>
-      </div>
+        <div class="img-container">
+          <img src="./assets/onepiece.jpg" class="popup-img" alt="onepiece" />
+        </div>
+        <div class="info-container">
+          <h1 class="popup-title"></h1>
+          <table>
+            <tbody>
+              <tr>
+                <td><span>Short Story</span><span>:</span></td>
+                <td class="info"></td>
+              </tr>
+              <tr>
+                <td><span>Broadcast</span><span>:</span></td>
+                <td class="broadcast"></td>
+              </tr>
+              <tr>
+                <td><span>Rating</span><span>:</span></td>
+                <td class="rating"></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="cmt-container">
+          <h2 class="sub-title">Comments - <span class="cmt-count"></span></h2>
+          <ul class="comment-list"></ul>
+        </div>
+        <div class="cmt-form">
+          <h2 class="sub-title">Add a Comment</h2>
+          <form action="" method="">
+            <div class="input-container">
+              <input
+                type="text"
+                name="name"
+                id="name"
+                class="form-control"
+                placeholder="Your Name"
+              />
+            </div>
+            <div class="input-container">
+              <textarea
+                id="cmt"
+                class="form-control"
+                placeholder="Your insights"
+              ></textarea>
+            </div>
+            <div class="btn-container">
+              <button type="submit" class="cmt-btn">Comment</button>
+            </div>
+          </form>
+        </div>
       </div>
     </section>
     <footer class="footer">
