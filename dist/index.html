@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Anime TV shows</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Indie+Flower"
+      rel="stylesheet"
+    />
+  <script defer src="bundle.js"></script></head>
+  <body>
+    <header>
+      <div class="nav">
+        <div class="nav_logo">
+          <img src="./assets/showLogo.png" width="100px" />
+        </div>
+        <div class="nav_links">
+          <ul>
+            <li><a href="#" class="nav_link">HOME</a></li>
+            <li><a href="#" class="nav_link">SHOWS</a></li>
+            <li><a href="#" class="nav_link">TOP PICKS</a></li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <div class="animes">
+      <h3 class="anime-title">
+        Anime TV shows
+        <span class="shows-tracker">0</span>
+      </h3>
+      <div class="main-anime-container"></div>
+    </div>
+    <section class="modal">
+      <div class="pop_up_blur_effect"></div>
+      <div class="popup-wrapper">
+        <button type="button" class="close-btn">X</button>
+        <div class="img-container">
+          <img src="./assets/onepiece.jpg" class="popup-img" alt="onepiece" />
+        </div>
+        <div class="info-container">
+          <h1 class="popup-title"></h1>
+          <table>
+            <tbody>
+              <tr>
+                <td><span>Short Story</span><span>:</span></td>
+                <td class="info"></td>
+              </tr>
+              <tr>
+                <td><span>Broadcast</span><span>:</span></td>
+                <td class="broadcast"></td>
+              </tr>
+              <tr>
+                <td><span>Rating</span><span>:</span></td>
+                <td class="rating"></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="cmt-container">
+          <h2 class="sub-title">Comments - <span class="cmtCount"></span></h2>
+          <ul class="comment-list"></ul>
+        </div>
+        <div class="cmt-form">
+          <h2 class="sub-title">Add a Comment</h2>
+          <form action="" method="">
+            <div class="input-container">
+              <input
+                type="text"
+                name="name"
+                id="name"
+                class="form-control"
+                placeholder="Your Name"
+              />
+            </div>
+            <div class="input-container">
+              <textarea
+                class="form-control"
+                placeholder="Your insights"
+              ></textarea>
+            </div>
+            <div class="btn-container">
+              <button type="submit" class="cmt-btn">Comment</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+    <footer class="footer">
+      <p>@animeseries media, 2023 all rights reserved</p>
+    </footer>
+  </body>
+</html>
